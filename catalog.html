@@ -103,8 +103,21 @@
               </li>
             </ul>
         </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <button class="catalog-filter-slider-button">
+            <output class="catalog-filter-slider" name="min">0</output>
+            <span class="catalog-filter-slider-item">от</span>
+          </button>
+          <button class="catalog-filter-slider-button">
+            <output class="catalog-filter-slider" name="max">9000</output>
+            <span class="catalog-filter-slider-item">до</span>
+          </button>
+          <br>
+          <input type="range" min="0" max="9000" step="10">
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
+        </fieldset>
         </form>
       </section>
       <section class="catalog-hotel-view">
