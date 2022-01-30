@@ -15,8 +15,32 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-weight: 400px;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
   }
+
+.page-header {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation-link-button {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+}
