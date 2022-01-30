@@ -26,7 +26,7 @@ body {
     font-size: 20px;
     line-height: 26px;
 }
-
+/* верхняя навигация*/
 .navigation-link {
     font-family: "PT Sans", sans-serif;
     line-height: 26px;
@@ -45,6 +45,7 @@ body {
     text-decoration: none;
 }
 
+/*основной блок*/
 .main-index {
     text-align: center;
     
@@ -71,3 +72,31 @@ body {
 .advantages-title {
     text-transform: uppercase;
   }
+
+  /*футер-сервис*/
+
+.services {
+    line-height: 36px;
+
+}
+.services-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.services-name {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.services-button {
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+}
+
+/*футер-рассылка*/
+
+/*футер-соцсети*/
