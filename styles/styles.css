@@ -135,7 +135,56 @@ body {
 
 .footer-contacts {
     font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  text-decoration: none;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*каталог*/
+
+.main-inner-filter {
+    background-image: url("images/catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку*/
+        background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #83B3D3;
+    align: Left;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px
+}
+
+.catalog-filter-group {
+    font-size: 20px;
+    line-height: 26px;
+    /*color: #ffffff;
+    background-color: #83B3D3;*/
+}
+
+.control-input {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    
+}
+
+.button-submit {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.catalog-filter-quantity {
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
 }

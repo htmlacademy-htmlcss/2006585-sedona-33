@@ -46,18 +46,21 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
+      <div class="main-inner-filter">
+       <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+         <ul class="breadcrumbs">
+           <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <img class="home" src="images/home.png" width="12" height="12" alt="На главную.">
+            </a>
+            </li>
+            <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Каталог</a>
-          </li>
-        </ul>
-      </header>
-      <section class="catalog-hotel">
+            </li>
+          </ul>
+        </header>
+        <section class="catalog-hotel">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -105,25 +108,28 @@
                 </label>
               </li>
             </ul>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <button class="catalog-filter-slider-button">
-            <output class="catalog-filter-slider" name="min">0</output>
-            <span class="catalog-filter-slider-item">от</span>
-          </button>
-          <button class="catalog-filter-slider-button">
-            <output class="catalog-filter-slider" name="max">9000</output>
-            <span class="catalog-filter-slider-item">до</span>
-          </button>
-          <br>
-          <input type="range" min="0" max="9000" step="10">
-          <button class="button-submit" type="submit">Применить</button>
-          <button class="button-reset" type="reset">Сбросить</button>
-        </fieldset>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <button class="catalog-filter-slider-button">
+              <output class="catalog-filter-slider" name="min">0</output>
+              <span class="catalog-filter-slider-item">от</span>
+            </button>
+            <button class="catalog-filter-slider-button">
+              <output class="catalog-filter-slider" name="max">9000</output>
+              <span class="catalog-filter-slider-item">до</span>
+            </button>
+            <br>
+            <input type="range" min="0" max="9000" step="10">
+            <button class="button-submit" type="submit">Применить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
+          </fieldset>
         </form>
-      </section>
+        </section>
+      </div>
+     
       <section class="catalog-hotel-view">
+        <div class="catalog-filter-sort">
         <label class="catalog-filter-quantity" for="hotel-quantity">
           Найдено гостиниц:
           <input type="text" name="hotel-quantity" id="hotel-quantity" value="38">
@@ -144,6 +150,7 @@
           <span class="visually-hidden">Показать список</span>
           <img src="images/catalog/mode-list.svg" width="16" height="14" alt="Показать список.">
         </a>
+        </div>
         <ul class="hotel-card">
           <li class="hotel-card-item">
           <a class="hotel-card-link" href="hotel.html">
