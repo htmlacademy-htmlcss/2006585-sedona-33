@@ -124,7 +124,7 @@ body {
     background-color: #ffffff;
 }
 
-.button newsletter-button { /* цвет не работает, почему?*/
+.newsletter-button { 
     font-size: 20px;
     color: #ffffff;
     background-color: #83B3D3;
@@ -133,14 +133,25 @@ body {
 }
 /*футер-соцсети*/
 
-.footer-contacts {
-    font-size: 40px;
+.contacts-phone{
+    ont-size: 40px;
     line-height: 40px;
     color: #000000;
     text-decoration: none;
 }
 
+/*.footer-contacts {
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}*/
+
 /*каталог*/
+.main-inner {
+    text-align: Left;
+
+}
 
 .main-inner-filter {
     background-image: url("images/catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку*/
@@ -148,7 +159,7 @@ body {
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
-    align: Left;
+    
 }
 
 .inner-header-title {
@@ -164,8 +175,8 @@ body {
 .catalog-filter-group {
     font-size: 20px;
     line-height: 26px;
-    /*color: #ffffff;
-    background-color: #83B3D3;*/
+    color: #ffffff;
+    background-color: #83B3D3;
 }
 
 .control-input {
@@ -188,3 +199,78 @@ body {
     line-height: 38px;
     text-transform: uppercase;
 }
+
+.select-control {
+    font-size: 18px;
+    line-height: 23px;
+    color:#333333;
+}
+
+.button-button-light {
+    text-align: center;
+    text-decoration: none;
+}
+
+.hotel-card {
+    font-size: 18px;
+    line-height: 23px;
+    color:#333333;
+    
+}
+
+.hotel-card-link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 31px;
+    color:#000000;
+}
+
+.hotel-card-button-button-favourites {
+    font-size: 16px;
+    line-height: 20px;
+    color:#ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hotel-card-button-button-detail {
+    font-size: 16px;
+    line-height: 20px;
+    color:#ffffff;
+    background-color: #756257;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.catalog-astra-rating {
+    font-size: 16px;
+    line-height: 20px;
+    color:#333333;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* пагинация */
+.pagination {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination-link {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-decoration: none;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  
+  .pagination-current {
+    color: #000000;
+    background-color: #f2f2f2;
+  }
+  
+  .pagination-disabled {
+    background-color: #595959;
+  }
+  
