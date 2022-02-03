@@ -140,12 +140,12 @@ body {
     text-decoration: none;
 }
 
-/*.footer-contacts {
+.htmlacademy-link {
     font-size: 40px;
     line-height: 40px;
     color: #000000;
     text-decoration: none;
-}*/
+}
 
 /*каталог*/
 .main-inner {
@@ -225,7 +225,7 @@ body {
     color:#000000;
 }
 
-.hotel-card-button-button-favourites {
+.button-favourites {
     font-size: 16px;
     line-height: 20px;
     color:#ffffff;
@@ -234,7 +234,7 @@ body {
     text-decoration: none;
 }
 
-.hotel-card-button-button-detail {
+.button-detail {
     font-size: 16px;
     line-height: 20px;
     color:#ffffff;
