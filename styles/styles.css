@@ -13,7 +13,13 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+  }
+
 body {
+    margin: 0;
+    display: flex;
   font-family: "PT Sans", sans-serif;
   font-weight: 400px;
   font-size: 18px;
