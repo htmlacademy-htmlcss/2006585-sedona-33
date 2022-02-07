@@ -36,6 +36,11 @@ body {
     line-height: 26px;
 }
 /* верхняя навигация*/
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
 .navigation-link {
     font-family: "PT Sans", sans-serif;
     line-height: 26px;
@@ -62,7 +67,7 @@ body {
   .main-container {
     flex-grow: 1;
   }
-  
+
 .main-index-mountain {
     background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
