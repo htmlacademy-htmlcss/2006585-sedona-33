@@ -34,12 +34,24 @@ body {
 .page-header {
     font-size: 20px;
     line-height: 26px;
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
 }
 /* верхняя навигация*/
 .navigation {
     display: flex;
-    width: 1060px;
+    width: 920px;
     margin: 0 auto;
+  }
+.navigation-list {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+  }
+.navigation-user {
+    max-width: 300px;
+    margin-left: auto;
   }
 .navigation-link {
     font-family: "PT Sans", sans-serif;
@@ -68,14 +80,17 @@ body {
     flex-grow: 1;
   }
 
-.main-index-mountain {
+.mountain {
     background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
   }
-  
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 .advantages-head {
     font-size: 30px;
     line-height: 36px;
@@ -87,7 +102,25 @@ body {
     line-height: 36px;
     color: #333333;
   }
-
+/.advantages-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    
+  }
+.advantages-item {
+    width: 1200px;
+    justify-content: space-between;
+  }
+.advantages-block-1 {
+    width: 400px;
+    justify-content: center;
+}
+.adventages-picture {
+    width: 800px;
+    justify-content: center;
+}
 .advantages-title {
     text-transform: uppercase;
   }
