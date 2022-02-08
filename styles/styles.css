@@ -72,13 +72,10 @@ body {
 }
 
 /*основной блок*/
-/*.main-index {
-    text-align: center;
-    
-  }*/
+
   .main-container {
     flex-grow: 1;
-  }
+}
 
 .mountain {
     background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
@@ -86,35 +83,46 @@ body {
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
-  }
-  .page-container {
+}
+.page-container {
     width: 1200px;
     margin: 0 auto;
-  }
+}
+
 .advantages-head {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-  }
+}
 
 .advantages-head-description {
     font-size: 22px;
     line-height: 36px;
     color: #333333;
-  }
+}
 /.advantages-list {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-    
-  }
-.advantages-item {
     width: 1200px;
     justify-content: space-between;
-  }
-.advantages-block-1 {
+    flex-grow:1;
+}
+.advantages-item {
+    display: flex;
+    /*width: 1200px;*/
+    justify-content: space-between;
+}
+
+.advantages-block {
     width: 400px;
+    justify-content: center;
+}
+.advantages-block-1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
     justify-content: center;
 }
 .adventages-picture {
@@ -124,11 +132,23 @@ body {
 .advantages-title {
     text-transform: uppercase;
   }
-/*.page-footer {
-
-}*/
+.services {
+    width: 1200px;
+    margin: 0;
+    padding: 0; 
+}
+/*.page-footer */
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
   /*футер-сервис*/
 
+.footer-block {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
 .services {
     line-height: 36px;
 
@@ -153,6 +173,9 @@ body {
 
 /*футер-рассылка*/
 .newsletter {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
     background-image: url("images/background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
@@ -181,14 +204,32 @@ body {
     text-decoration: none;
 }
 /*футер-соцсети*/
-
+.footer-social {
+    width: 107px;
+    margin-right: 64px;
+    margin-left: 65px;
+    justify-content: space-between;
+}
+.footer-contacts {
+    width: 720px;
+    margin-left: 236;
+    /*margin-right: 64px;
+    margin-left: 65;*/
+    justify-content: space-between;
+}
 .contacts-phone{
     ont-size: 40px;
     line-height: 40px;
     color: #000000;
     text-decoration: none;
 }
-
+.about-text {
+    max-width: 115px;
+    /*margin-right: 65px;*/
+    margin-left: 800px;
+   /* margin-left: auto;*/
+    /*justify-content: space-between;*/
+}
 .htmlacademy-link {
     font-size: 40px;
     line-height: 40px;
