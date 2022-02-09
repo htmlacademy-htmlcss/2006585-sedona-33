@@ -78,7 +78,7 @@ body {
 }
 
 .mountain {
-    background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url(".../images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -213,22 +213,18 @@ body {
 .footer-contacts {
     width: 720px;
     margin-left: 236;
-    /*margin-right: 64px;
-    margin-left: 65;*/
     justify-content: space-between;
 }
 .contacts-phone{
-    ont-size: 40px;
+    font-size: 40px;
     line-height: 40px;
     color: #000000;
     text-decoration: none;
 }
 .about-text {
     max-width: 115px;
-    /*margin-right: 65px;*/
     margin-left: 800px;
-   /* margin-left: auto;*/
-    /*justify-content: space-between;*/
+   
 }
 .htmlacademy-link {
     font-size: 40px;
@@ -261,14 +257,35 @@ body {
     font-size: 16px;
     line-height: 21px
 }
-
+.catalog-hotel {
+    display: flex;
+    margin: 0, auto;
+    justify-content: space-between;
+}
 .catalog-filter-group {
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
     background-color: #83B3D3;
 }
-
+/*.catalog-infrastructure {
+    display: flex;
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.catalog-housing {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    
+}
+.catalog-price {
+    max-width: 500px;
+    margin-left: auto;
+}*/
 .control-input {
     font-size: 18px;
     line-height: 23px;

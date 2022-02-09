@@ -64,7 +64,7 @@
         <section class="catalog-hotel">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-infrastructure">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -87,7 +87,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-housing">
             <legend class="catalog-filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -110,7 +110,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <button class="catalog-filter-slider-button">
               <output class="catalog-filter-slider" name="min">0</output>
@@ -308,7 +308,8 @@
       </section>
       </div>
     </main>
-<footer class="page-footer-catalog">
+    <footer class="page-footer-catalog">
+      <div class="page-footer-container">
       <section class="newsletter">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -321,6 +322,7 @@
         </form>
       </section>
       <section class="footer-social">
+        <div class="footer-block">
         <h2 class="page-footer-title">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -355,6 +357,8 @@
           </a>
       </p>
       </section>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
