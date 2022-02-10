@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+  }
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header {
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+/* верхняя навигация*/
+.navigation {
+    display: flex;
+    width: 920px;
+    margin: 0 auto;
+  }
+.navigation-list {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+  }
+.navigation-user {
+    max-width: 300px;
+    margin-left: auto;
+  }
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation-link-button {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+}
+
+/*основной блок*/
+
+  .main-container {
+    flex-grow: 1;
+}
+
+.mountain {
+    background-image: url(".../images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
+        background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.advantages-head {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.advantages-head-description {
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+/.advantages-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    justify-content: space-between;
+    flex-grow:1;
+}
+.advantages-item {
+    display: flex;
+    /*width: 1200px;*/
+    justify-content: space-between;
+}
+
+.advantages-block {
+    width: 400px;
+    justify-content: center;
+}
+.advantages-block-1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    justify-content: center;
+}
+.adventages-picture {
+    width: 800px;
+    justify-content: center;
+}
+.advantages-title {
+    text-transform: uppercase;
+  }
+.services {
+    width: 1200px;
+    margin: 0;
+    padding: 0; 
+}
+/*.page-footer */
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /*футер-сервис*/
+
+.footer-block {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.services {
+    line-height: 36px;
+
+}
+.services-title  {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.services-name {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.services-button {
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+}
+
+/*футер-рассылка*/
+.newsletter {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url("images/background.jpg"); /* Не понимаю почему не отображает картинку*/
+        background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+.page-footer-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.footer-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+.newsletter-email {
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.newsletter-button { 
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*футер-соцсети*/
+.footer-social {
+    width: 107px;
+    margin-right: 64px;
+    margin-left: 65px;
+    justify-content: space-between;
+}
+.footer-contacts {
+    width: 720px;
+    margin-left: 236;
+    justify-content: space-between;
+}
+.contacts-phone{
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+.about-text {
+    max-width: 115px;
+    margin-left: 800px;
+   
+}
+.htmlacademy-link {
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*каталог*/
+.main-inner {
+    text-align: Left;
+
+}
+
+.main-inner-filter {
+    background-image: url("images/catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку*/
+        background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #83B3D3;
+    
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px
+}
+.catalog-hotel {
+    display: flex;
+    margin: 0, auto;
+    justify-content: space-between;
+}
+.catalog-filter-group {
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+/*.catalog-infrastructure {
+    display: flex;
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.catalog-housing {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    
+}
+.catalog-price {
+    max-width: 500px;
+    margin-left: auto;
+}*/
+.control-input {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    
+}
+
+.button-submit {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.catalog-filter-quantity {
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+.select-control {
+    font-size: 18px;
+    line-height: 23px;
+    color:#333333;
+}
+
+.button-button-light {
+    text-align: center;
+    text-decoration: none;
+}
+
+.hotel-card {
+    font-size: 18px;
+    line-height: 23px;
+    color:#333333;
+    
+}
+
+.hotel-card-link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 31px;
+    color:#000000;
+}
+
+.button-favourites {
+    font-size: 16px;
+    line-height: 20px;
+    color:#ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-detail {
+    font-size: 16px;
+    line-height: 20px;
+    color:#ffffff;
+    background-color: #756257;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.catalog-astra-rating {
+    font-size: 16px;
+    line-height: 20px;
+    color:#333333;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* пагинация */
+.pagination {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination-link {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-decoration: none;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  
+  .pagination-current {
+    color: #000000;
+    background-color: #f2f2f2;
+  }
+  
+  .pagination-disabled {
+    background-color: #595959;
+  }
+  
