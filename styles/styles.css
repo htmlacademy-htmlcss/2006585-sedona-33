@@ -80,7 +80,7 @@ body {
     min-height: 66px;
 }
 
-.button {/*поработать с высотой кнопки*/
+.button {/*поработать с высотой кнопки и пр.*/
     margin-top: 14px;
     width: 160px;
     /*height: 38px;*/
@@ -96,6 +96,7 @@ body {
 
 .main-container {
     flex-grow: 1;
+    
 }
 
 .mountain {
@@ -110,14 +111,29 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-
+.logo-mountain-index {
+    display: block;
+    margin: 0 auto;
+    padding-left: 371px;
+    padding-top: 51px;
+    padding-right: 371px;
+    padding-bottom: 82px;
+}
 .advantages-head {
+    padding-left: 140px;
+    padding-top: 63px;
+    padding-right: 140px;
+    padding-bottom: 0px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
 
 .advantages-head-description {
+    padding-left: 140px;
+    padding-top: 31px;
+    padding-right: 140px;
+    padding-bottom: 80px;
     font-size: 22px;
     line-height: 36px;
     color: #333333;
