@@ -2,14 +2,14 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts\pt-sans-regular.woff2") format("woff2");
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts\pt-sans-regular.woff2") format("woff2");
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .mountain {
-    background-image: url("images\index-background.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -248,6 +248,7 @@ body {
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
+    text-align: left;
     
 }
 
@@ -263,7 +264,7 @@ body {
 .catalog-hotel {
     display: flex;
     margin: 0, auto;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 .catalog-filter-group {
     font-size: 20px;
