@@ -173,9 +173,38 @@ body {
     text-transform: uppercase;
   }
 .services {
+    line-height: 36px;
     width: 1200px;
     margin: 0;
     padding: 0; 
+    padding-top: 91px;
+    padding-bottom: 93px;
+    
+}
+.services-title  {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.services-name {
+    padding-left: 240px;
+    padding-top: 29px;
+    padding-right: 240px;
+    padding-bottom: 56px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+.services-button {
+    padding-left: 60px; /*Как сделать отступы слева и справа точнее?*/
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 575px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+}
 }
 /*.page-footer */
 .page-footer-container {
@@ -190,7 +219,7 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-.services {
+/*.services {
     line-height: 36px;
 
 }
@@ -210,7 +239,7 @@ body {
     color: #ffffff;
     background-color:#756257;
     text-decoration: none;
-}
+}*/
 
 /*футер-рассылка*/
 .newsletter {
