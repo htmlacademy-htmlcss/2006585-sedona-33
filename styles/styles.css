@@ -18,8 +18,8 @@ html {
   }
 
 body {
-    margin: 0;
     display: flex;
+    margin: 0;
     flex-direction: column;
     min-height: 100%;
     font-family: "PT Sans", sans-serif;
@@ -40,9 +40,9 @@ body {
     overflow: hidden;
   }
 .page-header {
+    display: flex;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
     width: 1060px;
     margin: 0 auto;
 }
@@ -53,16 +53,21 @@ body {
     margin: 0 auto;
   }
 .navigation-list {
+    display: flex;
+    flex-wrap: wrap; 
     width: 440px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
   }
 .navigation-user {
-    max-width: 300px;
+    max-width: 400px;
     margin-left: auto;
   }
 .navigation-link {
+    display: block;
+    padding: 20px 17px;
     line-height: 26px;
     font-weight: 700;
     text-align: left;
@@ -70,13 +75,21 @@ body {
     background-color: #ffffff;
     text-decoration: none;
 }
+.navigation-user .navigation-link {
+    min-width: 42px;
+    min-height: 66px;
+}
 
-.navigation-link-button {
+.button {/*поработать с высотой кнопки*/
+    margin-top: 14px;
+    width: 160px;
+    /*height: 38px;*/
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     background-color:#756257;
     text-decoration: none;
+    text-align: center;
 }
 
 /*основной блок*/
