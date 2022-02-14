@@ -205,7 +205,6 @@ body {
     background-color:#756257;
     text-decoration: none;
 }
-}
 /*.page-footer */
 .page-footer-container {
     width: 1200px;
@@ -214,12 +213,7 @@ body {
   }
   /*футер-сервис*/
 
-.footer-block {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-}
-/*.services {
+.services {
     line-height: 36px;
 
 }
@@ -239,13 +233,18 @@ body {
     color: #ffffff;
     background-color:#756257;
     text-decoration: none;
-}*/
+}
 
 /*футер-рассылка*/
 .newsletter {
     display: block;
-    width: 1200px;
+    width: 800px;
+    height: 224px;
     margin: 0 auto;
+    padding-left: 200px;
+    padding-top: 94px;
+    padding-right: 200px;
+    padding-bottom: 94px;
     background-image: url("images\background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
@@ -261,6 +260,11 @@ body {
     font-size: 22px;
     line-height: 26px;
 }
+.newsletter-form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
 .newsletter-email {
     font-size: 18px;
     color: #000000;
@@ -275,16 +279,25 @@ body {
     text-decoration: none;
 }
 /*футер-соцсети*/
-.footer-social {
+.footer-block {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.footer-social-list {
+    display: flex;
     width: 107px;
-    margin-right: 64px;
-    margin-left: 65px;
+    margin-right: 72px;
     justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
 }
 .footer-contacts {
     width: 720px;
-    margin-left: 236;
-    justify-content: space-between;
+    margin-left: 60px;
+    text-align: center;
 }
 .contacts-phone{
     font-size: 40px;
@@ -295,6 +308,7 @@ body {
 .about-text {
     max-width: 115px;
     margin-left: 800px;
+    text-align: center;
    
 }
 .htmlacademy-link {
