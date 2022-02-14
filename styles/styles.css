@@ -331,31 +331,53 @@ body {
     color: #ffffff;
     background-color: #83B3D3;
     text-align: left;
+    padding-left: 110px;
+    padding-top: 10px;
+    padding-right: 110px;
+    padding-bottom: 110px;
     
 }
 
 .inner-header-title {
     font-size: 60px;
-    line-height: 78px
+    line-height: 78px;
 }
-
+.breadcrumbs {
+    list-style-type: none;
+    margin: 0, auto;
+    padding: 0;
+}
 .breadcrumbs-link {
     font-size: 16px;
-    line-height: 21px
+    line-height: 21px;
+    
 }
 .catalog-hotel {
     display: flex;
     margin: 0, auto;
-    /*justify-content: space-between;*/
+    
+    
+   
+}
+.catalog-filter {
+    display: flex;
+    margin: 0, auto;
+    list-style-type: none;
+    
 }
 .catalog-filter-group {
+    /*display: flex;*/
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
     background-color: #83B3D3;
 }
-/*.catalog-infrastructure {
-    display: flex;
+.catalog-filter-list {
+    list-style-type: none;
+    padding: 0;
+}
+.catalog-infrastructure {
+    /*display: flex;*/
     width: 290px;
     margin: 0;
     padding: 0;
@@ -369,9 +391,10 @@ body {
     
 }
 .catalog-price {
+   
     max-width: 500px;
     margin-left: auto;
-}*/
+}
 .control-input {
     font-size: 18px;
     line-height: 23px;
@@ -379,7 +402,10 @@ body {
     background-color: #83B3D3;
     
 }
-
+.button-price {
+    /*display: flex;
+    flex-direction: column;*/
+}
 .button-submit {
     color: #ffffff;
     background-color: #83B3D3;
@@ -408,7 +434,9 @@ body {
     font-size: 18px;
     line-height: 23px;
     color:#333333;
-    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hotel-card-link {
@@ -446,11 +474,30 @@ body {
 }
 
 /* пагинация */
+.pagination-container {
+    display: flex;
+    padding: 112px;
+}
 .pagination {
     background-color: #f2f2f2;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
-  
-  .pagination-link {
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+ } 
+.hotel-card-view {
+    margin-left: 470px;
+    margin-right: 50px;
+}
+.pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 44px;
+    padding: 14px 20px;
     color: #ffffff;
     background-color: #83B3D3;
     text-decoration: none;
@@ -458,12 +505,12 @@ body {
     font-weight: 700;
   }
   
-  .pagination-current {
+.pagination-current {
     color: #000000;
     background-color: #f2f2f2;
   }
   
-  .pagination-disabled {
+.pagination-disabled {
     background-color: #595959;
   }
   
