@@ -18,23 +18,31 @@ html {
   }
 
 body {
-    margin: 0;
     display: flex;
+    margin: 0;
     flex-direction: column;
     min-height: 100%;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400px;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .page-header {
+    display: flex;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
     width: 1060px;
     margin: 0 auto;
 }
@@ -45,57 +53,87 @@ body {
     margin: 0 auto;
   }
 .navigation-list {
+    display: flex;
+    flex-wrap: wrap; 
     width: 440px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    
   }
 .navigation-user {
-    max-width: 300px;
+    max-width: 400px;
     margin-left: auto;
   }
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
+    display: block;
+    padding: 20px 17px;
     line-height: 26px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     color: #000000;
     background-color: #ffffff;
     text-decoration: none;
 }
+.navigation-user .navigation-link {
+    min-width: 42px;
+    min-height: 66px;
+}
 
-.navigation-link-button {
+.button {/*поработать с высотой кнопки и пр.*/
+    margin-top: 14px;
+    width: 160px;
+    /*height: 38px;*/
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     background-color:#756257;
     text-decoration: none;
+    text-align: center;
 }
 
 /*основной блок*/
 
-  .main-container {
+.main-container {
     flex-grow: 1;
+    
 }
 
 .mountain {
-    background-image: url(".../images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
 }
 .page-container {
+    text-align: center;
     width: 1200px;
     margin: 0 auto;
 }
-
+.logo-mountain-index {
+    display: block;
+    margin: 0 auto;
+    padding-left: 371px;
+    padding-top: 51px;
+    padding-right: 371px;
+    padding-bottom: 82px;
+}
 .advantages-head {
+    padding-left: 140px;
+    padding-top: 63px;
+    padding-right: 140px;
+    padding-bottom: 0px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
 
 .advantages-head-description {
+    padding-left: 140px;
+    padding-top: 31px;
+    padding-right: 140px;
+    padding-bottom: 80px;
     font-size: 22px;
     line-height: 36px;
     color: #333333;
@@ -110,7 +148,6 @@ body {
 }
 .advantages-item {
     display: flex;
-    /*width: 1200px;*/
     justify-content: space-between;
 }
 
@@ -130,25 +167,52 @@ body {
     justify-content: center;
 }
 .advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
     text-transform: uppercase;
   }
 .services {
+    line-height: 36px;
     width: 1200px;
     margin: 0;
     padding: 0; 
+    padding-top: 91px;
+    padding-bottom: 93px;
+    
+}
+.services-title  {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.services-name {
+    padding-left: 240px;
+    padding-top: 29px;
+    padding-right: 240px;
+    padding-bottom: 56px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+.services-button {
+    padding-left: 60px; /*Как сделать отступы слева и справа точнее?*/
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 575px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
 }
 /*.page-footer */
 .page-footer-container {
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
   }
   /*футер-сервис*/
 
-.footer-block {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-}
 .services {
     line-height: 36px;
 
@@ -174,9 +238,14 @@ body {
 /*футер-рассылка*/
 .newsletter {
     display: block;
-    width: 1200px;
+    width: 800px;
+    height: 224px;
     margin: 0 auto;
-    background-image: url("images/background.jpg"); /* Не понимаю почему не отображает картинку*/
+    padding-left: 200px;
+    padding-top: 94px;
+    padding-right: 200px;
+    padding-bottom: 94px;
+    background-image: url("images\background.jpg"); /* Не понимаю почему не отображает картинку*/
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -185,10 +254,16 @@ body {
 .page-footer-title {
     font-size: 30px;
     text-transform: uppercase;
+    line-height: 1em;
 }
 .footer-description {
     font-size: 22px;
     line-height: 26px;
+}
+.newsletter-form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 .newsletter-email {
     font-size: 18px;
@@ -204,16 +279,25 @@ body {
     text-decoration: none;
 }
 /*футер-соцсети*/
-.footer-social {
+.footer-block {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.footer-social-list {
+    display: flex;
     width: 107px;
-    margin-right: 64px;
-    margin-left: 65px;
+    margin-right: 72px;
     justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
 }
 .footer-contacts {
     width: 720px;
-    margin-left: 236;
-    justify-content: space-between;
+    margin-left: 60px;
+    text-align: center;
 }
 .contacts-phone{
     font-size: 40px;
@@ -224,6 +308,7 @@ body {
 .about-text {
     max-width: 115px;
     margin-left: 800px;
+    text-align: center;
    
 }
 .htmlacademy-link {
@@ -240,36 +325,59 @@ body {
 }
 
 .main-inner-filter {
-    background-image: url("images/catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url("images\catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку, даже если полный путь)))*/
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
+    text-align: left;
+    padding-left: 110px;
+    padding-top: 10px;
+    padding-right: 110px;
+    padding-bottom: 110px;
     
 }
 
 .inner-header-title {
     font-size: 60px;
-    line-height: 78px
+    line-height: 78px;
 }
-
+.breadcrumbs {
+    list-style-type: none;
+    margin: 0, auto;
+    padding: 0;
+}
 .breadcrumbs-link {
     font-size: 16px;
-    line-height: 21px
+    line-height: 21px;
+    
 }
 .catalog-hotel {
     display: flex;
     margin: 0, auto;
-    justify-content: space-between;
+    
+    
+   
+}
+.catalog-filter {
+    display: flex;
+    margin: 0, auto;
+    list-style-type: none;
+    
 }
 .catalog-filter-group {
+    /*display: flex;*/
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
     background-color: #83B3D3;
 }
-/*.catalog-infrastructure {
-    display: flex;
+.catalog-filter-list {
+    list-style-type: none;
+    padding: 0;
+}
+.catalog-infrastructure {
+    /*display: flex;*/
     width: 290px;
     margin: 0;
     padding: 0;
@@ -283,9 +391,10 @@ body {
     
 }
 .catalog-price {
+   
     max-width: 500px;
     margin-left: auto;
-}*/
+}
 .control-input {
     font-size: 18px;
     line-height: 23px;
@@ -293,7 +402,10 @@ body {
     background-color: #83B3D3;
     
 }
-
+.button-price {
+    /*display: flex;
+    flex-direction: column;*/
+}
 .button-submit {
     color: #ffffff;
     background-color: #83B3D3;
@@ -322,7 +434,9 @@ body {
     font-size: 18px;
     line-height: 23px;
     color:#333333;
-    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hotel-card-link {
@@ -360,11 +474,30 @@ body {
 }
 
 /* пагинация */
+.pagination-container {
+    display: flex;
+    padding: 112px;
+}
 .pagination {
     background-color: #f2f2f2;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
-  
-  .pagination-link {
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+ } 
+.hotel-card-view {
+    margin-left: 470px;
+    margin-right: 50px;
+}
+.pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 44px;
+    padding: 14px 20px;
     color: #ffffff;
     background-color: #83B3D3;
     text-decoration: none;
@@ -372,12 +505,12 @@ body {
     font-weight: 700;
   }
   
-  .pagination-current {
+.pagination-current {
     color: #000000;
     background-color: #f2f2f2;
   }
   
-  .pagination-disabled {
+.pagination-disabled {
     background-color: #595959;
   }
   
