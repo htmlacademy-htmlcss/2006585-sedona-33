@@ -112,16 +112,20 @@
           </fieldset>
           <fieldset class="catalog-filter-group catalog-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <div class="catalog-filter-slider-button-1">
+              <div class="catalog-filter-slider-button-2">
             <button class="catalog-filter-slider-button">
-              <output class="catalog-filter-slider" name="min">0</output>
+              <input class="catalog-filter-slider" name="min" type="number" value="0">
               <span class="catalog-filter-slider-item">от</span>
             </button>
             <button class="catalog-filter-slider-button">
-              <output class="catalog-filter-slider" name="max">9000</output>
+              <input class="catalog-filter-slider" name="max" type="number" value="900">
               <span class="catalog-filter-slider-item">до</span>
             </button>
+              </div>
             <br>
-            <input type="range" min="0" max="9000" step="10">
+            <input class="range" type="range" min="0" max="9000" step="10">
+            </div>
             <div class="button-price">
               <button class="button-submit" type="submit">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
