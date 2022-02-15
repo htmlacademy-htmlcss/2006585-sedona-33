@@ -100,7 +100,7 @@ body {
 }
 
 .mountain {
-    background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url("../images/index-background.jpg"); 
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -245,7 +245,7 @@ body {
     padding-top: 94px;
     padding-right: 200px;
     padding-bottom: 94px;
-    background-image: url("images\background.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url("../images/background.jpg"); 
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -325,16 +325,17 @@ body {
 }
 
 .main-inner-filter {
-    background-image: url("images\catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку, даже если полный путь)))*/
+    background-image: url("../images/catalog-background-1.jpg"); 
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
     text-align: left;
+    margin: 0;
     padding-left: 110px;
     padding-top: 10px;
     padding-right: 110px;
-    padding-bottom: 110px;
+    padding-bottom: 30px;
     
 }
 
@@ -380,7 +381,7 @@ body {
     padding: 0;
 }
 .catalog-infrastructure {
-    /*display: flex;*/
+    
     width: 290px;
     margin: 0;
     padding: 0;
@@ -428,7 +429,11 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
-
+/*.catalog-filter-sort {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 34px;
+}*/
 .catalog-filter-quantity {
     font-size: 30px;
     line-height: 38px;
