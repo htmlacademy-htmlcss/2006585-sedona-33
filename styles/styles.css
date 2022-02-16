@@ -148,13 +148,11 @@ body {
 }
 .advantages-item {
     display: flex;
-    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
 }
 
-.advantages-block {
-    width: 400px;
-    justify-content: center;
-}
+
 .advantages-block-1 {
     display: flex;
     margin: 0;
