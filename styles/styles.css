@@ -153,13 +153,13 @@ body {
 }
 
 
-.advantages-block-1 {
+/*.advantages-block-1 {
     display: flex;
     margin: 0;
     padding: 0;
     width: 1200px;
     justify-content: center;
-}
+}*/
 .adventages-picture {
     width: 800px;
     justify-content: center;
