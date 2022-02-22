@@ -13,71 +13,215 @@
     font-display: swap;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400px;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-}
+html {
+    height: 100%;
+  }
 
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .page-header {
+    display: flex;
     font-size: 20px;
     line-height: 26px;
+    width: 1060px;
+    margin: 0 auto;
 }
 /* верхняя навигация*/
+.navigation {
+    display: flex;
+    width: 920px;
+    margin: 0 auto;
+  }
+.navigation-list {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+  }
+.navigation-user {
+    max-width: 400px;
+    margin-left: auto;
+  }
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
+    display: block;
+    padding: 20px 17px;
     line-height: 26px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     color: #000000;
     background-color: #ffffff;
     text-decoration: none;
 }
+.navigation-user .navigation-link {
+    min-width: 42px;
+    min-height: 66px;
+}
 
-.navigation-link-button {
+.button {/*поработать с высотой кнопки и пр.*/
+    margin-top: 14px;
+    width: 160px;
+    /*height: 38px;*/
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     background-color:#756257;
     text-decoration: none;
+    text-align: center;
 }
 
 /*основной блок*/
-/*.main-index {
-    text-align: center;
-    
-  }*/
 
-.main-index-mountain {
-    background-image: url("images/index-background.jpg"); /* Не понимаю почему не отображает картинку*/
+.main-container {
+    flex-grow: 1;
+    
+}
+
+.mountain {
+    background-image: url("../images/index-background.jpg"); 
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
-  }
-  
+}
+.page-container {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo-mountain-index {
+    display: block;
+    margin: 0 auto;
+    padding-left: 371px;
+    padding-top: 51px;
+    padding-right: 371px;
+    padding-bottom: 82px;
+}
 .advantages-head {
+    padding-left: 140px;
+    padding-top: 63px;
+    padding-right: 140px;
+    padding-bottom: 0px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-  }
+}
 
 .advantages-head-description {
+    padding-left: 140px;
+    padding-top: 31px;
+    padding-right: 140px;
+    padding-bottom: 80px;
     font-size: 22px;
     line-height: 36px;
     color: #333333;
-  }
+}
+.advantages-list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    grid-template-columns: repeat (3, 400px);
+    gap: 45px;
+    justify-content: center;
+    flex-grow:1;
+    list-style-type: none;
+}
 
+.advantages-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    width: 400px;
+    padding: 90px auto;
+}
+.advantages-item-picture-1 {
+    grid-column: 2/4;
+    width: 800px;
+    justify-content: center;
+    list-style-type: none;
+}
+.advantages-item-picture-2 {
+    grid-column: 1/3;
+    width: 800px;
+    justify-content: center;
+    list-style-type: none;
+}
+.adventages-picture {
+    width: 800px;
+    justify-content: center;
+}
 .advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
     text-transform: uppercase;
   }
-/*.page-footer {
 
-}*/
+.services {
+    line-height: 36px;
+    width: 1200px;
+    margin: 0;
+    padding: 0; 
+    padding-top: 91px;
+    padding-bottom: 93px;
+    
+}
+.services-title  {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.services-name {
+    padding-left: 240px;
+    padding-top: 29px;
+    padding-right: 240px;
+    padding-bottom: 56px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+.services-button {
+    padding-left: 60px; /*Как сделать отступы слева и справа точнее?*/
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 575px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+}
+/*.page-footer */
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
   /*футер-сервис*/
 
 .services {
@@ -104,7 +248,15 @@ body {
 
 /*футер-рассылка*/
 .newsletter {
-    background-image: url("images/background.jpg"); /* Не понимаю почему не отображает картинку*/
+    display: block;
+    width: 800px;
+    height: 224px;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-top: 94px;
+    padding-right: 200px;
+    padding-bottom: 94px;
+    background-image: url("../images/background.jpg"); 
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -113,10 +265,16 @@ body {
 .page-footer-title {
     font-size: 30px;
     text-transform: uppercase;
+    line-height: 1em;
 }
 .footer-description {
     font-size: 22px;
     line-height: 26px;
+}
+.newsletter-form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 .newsletter-email {
     font-size: 18px;
@@ -132,14 +290,38 @@ body {
     text-decoration: none;
 }
 /*футер-соцсети*/
-
+.footer-block {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.footer-social-list {
+    display: flex;
+    width: 107px;
+    margin-right: 72px;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+}
+.footer-contacts {
+    width: 720px;
+    margin-left: 60px;
+    text-align: center;
+}
 .contacts-phone{
-    ont-size: 40px;
+    font-size: 40px;
     line-height: 40px;
     color: #000000;
     text-decoration: none;
 }
-
+.about-text {
+    max-width: 115px;
+    margin-left: 800px;
+    text-align: center;
+   
+}
 .htmlacademy-link {
     font-size: 40px;
     line-height: 40px;
@@ -154,31 +336,91 @@ body {
 }
 
 .main-inner-filter {
-    background-image: url("images/catalog-background-1.jpg"); /* Не понимаю почему не отображает картинку*/
+    background-image: url("../images/catalog-background-1.jpg"); 
         background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #83B3D3;
+    text-align: left;
+    margin: 0;
+    padding-left: 110px;
+    padding-top: 10px;
+    padding-right: 110px;
+    padding-bottom: 30px;
     
 }
 
 .inner-header-title {
     font-size: 60px;
-    line-height: 78px
+    line-height: 78px;
 }
-
+.breadcrumbs {
+    display: flex;
+    list-style-type: none;
+    margin: 0, auto;
+    padding: 0;
+}
 .breadcrumbs-link {
     font-size: 16px;
-    line-height: 21px
+    line-height: 21px;
+    padding: 15px;
+    
 }
-
+.catalog-hotel {
+    display: flex;
+    margin: 0, auto;
+    
+    
+   
+}
+.catalog-filter {
+    display: flex;
+    margin: 0, auto;
+    list-style-type: none;
+    
+}
 .catalog-filter-group {
+    display: flex;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
-    background-color: #83B3D3;
+    
+    max-width: 290px;
+    margin: 0;
+    padding: 0;
+}
+.catalog-filter-list {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.catalog-infrastructure {
+    
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.catalog-housing {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    
 }
 
+.catalog-filter-slider-button-2 {
+    display: flex;
+    max-width: 288px;
+    margin-right: 20px;
+
+}
+.catalog-filter-slider {
+    display: flex;
+    width: 124px;
+}
+
+}
 .control-input {
     font-size: 18px;
     line-height: 23px;
@@ -186,14 +428,21 @@ body {
     background-color: #83B3D3;
     
 }
-
+.button-price {
+    
+    margin-left: 20px;
+}
 .button-submit {
     color: #ffffff;
     background-color: #83B3D3;
     text-transform: uppercase;
     text-decoration: none;
 }
-
+/*.catalog-filter-sort {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 34px;
+}*/
 .catalog-filter-quantity {
     font-size: 30px;
     line-height: 38px;
@@ -212,19 +461,48 @@ body {
 }
 
 .hotel-card {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 23px;
     color:#333333;
-    
+   
 }
-
+.hotel-card-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.product-card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 16px;
+  }
 .hotel-card-link {
     text-decoration: none;
     font-size: 24px;
     line-height: 31px;
     color:#000000;
 }
+.astra {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+    text-decoration: none;
 
+    
+}
 .button-favourites {
     font-size: 16px;
     line-height: 20px;
@@ -253,11 +531,30 @@ body {
 }
 
 /* пагинация */
+.pagination-container {
+    display: flex;
+    padding: 112px;
+}
 .pagination {
     background-color: #f2f2f2;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
-  
-  .pagination-link {
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+ } 
+.hotel-card-view {
+    margin-left: 470px;
+    margin-right: 50px;
+}
+.pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 44px;
+    padding: 14px 20px;
     color: #ffffff;
     background-color: #83B3D3;
     text-decoration: none;
@@ -265,12 +562,12 @@ body {
     font-weight: 700;
   }
   
-  .pagination-current {
+.pagination-current {
     color: #000000;
     background-color: #f2f2f2;
   }
   
-  .pagination-disabled {
+.pagination-disabled {
     background-color: #595959;
   }
   
