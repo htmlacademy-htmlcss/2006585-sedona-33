@@ -140,26 +140,29 @@
      
       <section class="catalog-hotel-view">
         <div class="catalog-filter-sort">
-        <label class="catalog-filter-quantity" for="hotel-quantity">
-          Найдено гостиниц:
-          <input type="text" name="hotel-quantity" id="hotel-quantity" value="38">
-        </label>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <a href="#" class="button-button-light">
-          <span class="visually-hidden">Показать карточки</span>
-          <img src="images/catalog/mode-tile.svg" width="16" height="14">
-        </a><a href="#" class="button-button-light">
-          <span class="visually-hidden">Показать по-одному</span>
-          <img src="images/catalog/mode-slideshow.svg" width="16" height="14">
-        </a>
-        <a href="#" class="button-button-light">
-          <span class="visually-hidden">Показать список</span>
-          <img src="images/catalog/mode-list.svg" width="16" height="14">
-        </a>
+            <label class="catalog-filter-quantity" for="hotel-quantity">
+              Найдено гостиниц:
+              <input class="catalog-filter-quantity-button" type="text" name="hotel-quantity" id="hotel-quantity" value="38">
+            </label>
+          <div class="catalog-filter-sort-button">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <a href="#" class="button-button-light">
+              <span class="visually-hidden">Показать карточки</span>
+              <img src="images/catalog/mode-tile.svg" width="16" height="14">
+            </a>
+            <a href="#" class="button-button-light">
+              <span class="visually-hidden">Показать по-одному</span>
+              <img src="images/catalog/mode-slideshow.svg" width="16" height="14">
+            </a>
+            <a href="#" class="button-button-light">
+              <span class="visually-hidden">Показать список</span>
+              <img src="images/catalog/mode-list.svg" width="16" height="14">
+            </a>
+          </div>
         </div>
         <ul class="hotel-card">
           <li class="hotel-card-item">

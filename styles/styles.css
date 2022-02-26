@@ -400,10 +400,7 @@ body {
 }
 .catalog-hotel {
     display: flex;
-    margin: 0, auto;
-    
-    
-   
+    margin: 0, auto; 
 }
 .catalog-filter {
     display: flex;
@@ -431,28 +428,23 @@ body {
     width: 290px;
     margin: 0;
     padding: 0;
-    
-    
 }
 .catalog-housing {
     width: 290px;
     margin: 0;
     padding: 0;
-    
 }
 
 .catalog-filter-slider-button-2 {
     display: flex;
     max-width: 288px;
     margin-right: 20px;
-
 }
 .catalog-filter-slider {
     display: flex;
     width: 124px;
 }
 
-}
 .control-input {
     font-size: 18px;
     line-height: 23px;
@@ -470,17 +462,30 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
-/*.catalog-filter-sort {
+.catalog-filter-sort {
     display: flex;
     margin: 0 auto;
-    padding-top: 34px;
-}*/
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-top: 44px;
+    padding-right: 62px;
+    padding-bottom: 53px;
+}
+.catalog-filter-quantity-button {
+    padding: 0px;
+    border: 0px;
+    text-transform: uppercase;
+}
 .catalog-filter-quantity {
     font-size: 30px;
     line-height: 38px;
     text-transform: uppercase;
 }
-
+.catalog-filter-sort-button {
+    display: flex;
+    justify-content: space-between;
+}
+    
 .select-control {
     font-size: 18px;
     line-height: 23px;
