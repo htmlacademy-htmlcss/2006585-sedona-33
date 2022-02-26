@@ -261,6 +261,7 @@ body {
     color: #ffffff;
     background-color: #83B3D3;
 }
+
 .page-footer-title {
     font-size: 30px;
     text-transform: uppercase;
@@ -275,13 +276,24 @@ body {
     margin: 0 auto;
     justify-content: center;
 }
+.field {
+    padding: 16px;
+    border-width: 0px;
+    width: 600px;
+}
 .newsletter-email {
+   
+   
     font-size: 18px;
     color: #000000;
     background-color: #ffffff;
 }
 
 .newsletter-button { 
+    margin: 0px;
+    padding: 16px;
+    border: 0px;
+    width: 200px;
     font-size: 20px;
     color: #ffffff;
     background-color: #83B3D3;
