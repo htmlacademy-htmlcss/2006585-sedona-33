@@ -303,6 +303,7 @@ body {
 /*футер-соцсети*/
 .footer-block {
     display: flex;
+    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
     padding-top: 35px;
@@ -316,10 +317,16 @@ body {
     text-align: center;
     list-style-type: none;
 }
+.footer-social-item {
+    padding: 15px;
+    justify-content: center;
+}
 .footer-contacts {
+    display: flex;
     width: 720px;
-    margin-left: 60px;
-    text-align: center;
+    margin-left: 0px;
+    justify-content: space-between;
+    padding-top: 40px;
 }
 .contacts-phone{
     font-size: 40px;
@@ -328,8 +335,8 @@ body {
     text-decoration: none;
 }
 .about-text {
-    max-width: 115px;
-    margin-left: 800px;
+    /*max-width: 115px;*/
+    margin: 0px;
     text-align: center;
    
 }
