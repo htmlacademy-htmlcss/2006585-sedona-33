@@ -2,14 +2,14 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -144,10 +144,14 @@ body {
     padding: 0;
     width: 1200px;
     grid-template-columns: repeat (3, 400px);
-    gap: 45px;
+    grid-template-rows: 384px 384px 384px 384px;
+    /*gap: 45px;*/
     justify-content: center;
     flex-grow:1;
     list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    
 }
 
 .advantages-item {
@@ -156,9 +160,9 @@ body {
     padding: 0;
     flex-direction: column;
     list-style-type: none;
-    text-align: center;
+    justify-content: center;
     width: 400px;
-    padding: 90px auto;
+   
 }
 .advantages-item-picture-1 {
     grid-column: 2/4;
