@@ -75,15 +75,17 @@ body {
     background-color: #ffffff;
     text-decoration: none;
 }
-.navigation-user .navigation-link {
+/*.navigation-user .navigation-link {
     min-width: 42px;
     min-height: 66px;
+}*/
+.navigation-item {
+    padding: 5px;
 }
 
-.button {/*поработать с высотой кнопки и пр.*/
-    margin-top: 14px;
+.button {
+    margin: 16px;
     width: 160px;
-    /*height: 38px;*/
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
