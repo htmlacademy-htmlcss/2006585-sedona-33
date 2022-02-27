@@ -583,7 +583,8 @@ body {
 /* пагинация */
 .pagination-container {
     display: flex;
-    padding: 112px;
+    justify-content: space-between;
+    padding: 30px 72px;
 }
 .pagination {
     background-color: #f2f2f2;
@@ -591,16 +592,27 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
   }
 .pagination-item:not(:last-child) {
-    margin-right: 8px;
- } 
-
+    margin-block-start: 0px;
+    margin-right: 9px;
+} 
+.pagination-hotel-card-view {
+    width: 574px;
+}
+.hotel-card-on-page {
+    margin-left: 51px;
+    padding: 16px;
+    width: 260px;
+    font-size: 18px;
+    line-height: 23px;
+}
 .pagination-link {
     display: block;
     box-sizing: border-box;
     width: 50px;
-    height: 44px;
+    height: 50px;
     padding: 14px 20px;
     color: #ffffff;
     background-color: #83B3D3;
