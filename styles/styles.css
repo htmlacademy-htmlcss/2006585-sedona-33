@@ -372,16 +372,19 @@ body {
     padding-left: 110px;
     padding-top: 10px;
     padding-right: 110px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .inner-header-title {
+    margin-top: 35px;
+    margin-bottom: 8px;
+    padding: 0px;
     font-size: 60px;
     line-height: 78px;
 }
 .breadcrumbs {
     display: flex;
     list-style-type: none;
-    margin: 0, auto;
+    margin: 0;
     padding: 0;
 }
 .breadcrumbs-link {
@@ -391,7 +394,7 @@ body {
 }
 .catalog-hotel {
     display: flex;
-    margin: 0, auto; 
+    margin: 45px 0px; 
 }
 .catalog-filter {
     display: flex;
@@ -403,9 +406,13 @@ body {
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
-    max-width: 290px;
+    width: 350px;
     margin: 0;
     padding: 0;
+}
+.slider-button-1 {
+    margin: 0px;
+    padding: 0px;
 }
 .catalog-filter-list {
     list-style-type: none;
@@ -423,11 +430,16 @@ body {
 }
 .catalog-filter-slider-button-2 {
     display: flex;
-    max-width: 288px;
-    margin-right: 20px;
+    width: 400px;
+    
+}
+.catalog-filter-slider-button {
+    margin: 0px;
+    padding: 0px;
 }
 .catalog-filter-slider {
-    display: flex;
+    /*display: flex;
+    flex-direction: column;*/
     width: 124px;
 }
 .control-input {
@@ -437,7 +449,7 @@ body {
     background-color: #83B3D3;
 }
 .button-price {
-    margin-left: 20px;
+    margin: 34px 0px;
 }
 .button-submit {
     color: #ffffff;
@@ -527,16 +539,6 @@ body {
     line-height: 31px;
     color:#000000;
 }
-/*.astra {
-    grid-column: 1/-1;
-    padding: 10px 0px;
-    font-size: 16px;
-    line-height: 20px;
-    color: #333333;;
-    background-color: #f2f2f2;
-    text-transform: uppercase;
-    text-decoration: none;
-}*/
 .catalog-astra-title {
     display: flex;
     text-decoration: none;
