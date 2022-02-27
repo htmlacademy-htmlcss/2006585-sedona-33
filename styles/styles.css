@@ -47,6 +47,11 @@ body {
     margin: 0 auto;
 }
 /* верхняя навигация*/
+/*.logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}*/
 .navigation {
     display: flex;
     width: 920px;
@@ -75,6 +80,15 @@ body {
     color: #000000;
     background-color: #ffffff;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all.3s ease-in-out;
+}
+.navigation-link.activ {
+    border-bottom: #000000;
+}
+.navigation-link:hover {
+    border-bottom: #000000;
 }
 .button {
     margin: 16px;
@@ -138,9 +152,13 @@ body {
     margin: 0;
     padding: 0;
     width: 1200px;
-    grid-template-columns: repeat (3, 400px);
+    /*grid-template-areas:
+    "advantages-item blok-2 blok-2"
+    "blok-3 blok-4 blok-5"
+    "blok-6 blok-6 blok-7"
+    "blok-8 blok-9 blok-10";*/
+    grid-template-columns: 400px 400px 400px;
     grid-template-rows: 384px 384px 384px 384px;
-    /*gap: 45px;*/
     justify-content: center;
     flex-grow:1;
     list-style-type: none;
@@ -148,11 +166,12 @@ body {
     vertical-align: middle;
     
 }
-
+/*.advantages-list-advantages-item {
+    background-color: #83b3d3;
+}*/
 .advantages-item {
     display: flex;
     margin: 0;
-   /* padding: 97px 90px 87px 90px;*/
     flex-direction: column;
     list-style-type: none;
     justify-content: center;
