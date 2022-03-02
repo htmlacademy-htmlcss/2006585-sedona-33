@@ -99,6 +99,7 @@ body {
     background-color:#756257;
     text-decoration: none;
     text-align: center;
+    border-radius: 5px;
 }
 
 /*основной блок*/
@@ -253,7 +254,7 @@ body {
     color: #333333;
 }
 .services-button {
-    padding-left: 60px; /*Как сделать отступы слева и справа точнее?*/
+    padding-left: 60px; 
     padding-right: 60px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -262,6 +263,7 @@ body {
     color: #ffffff;
     background-color:#756257;
     text-decoration: none;
+    border-radius: 10px;
 }
 /*.page-footer */
 .page-footer-container {
@@ -344,6 +346,7 @@ body {
     background-color: #83B3D3;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 0px;
 }
 /*футер-соцсети*/
 .footer-block {
@@ -412,7 +415,7 @@ body {
     padding-left: 110px;
     padding-top: 10px;
     padding-right: 110px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .inner-header-title {
     margin-top: 35px;
@@ -470,7 +473,7 @@ body {
 }
 .catalog-filter-slider-button-2 {
     display: flex;
-    width: 400px;
+    width: 350px;
     
 }
 .catalog-filter-slider-button {
@@ -478,8 +481,7 @@ body {
     padding: 0px;
 }
 .catalog-filter-slider {
-    /*display: flex;
-    flex-direction: column;*/
+    
     width: 124px;
 }
 .control-input {
@@ -492,10 +494,26 @@ body {
     margin: 34px 0px;
 }
 .button-submit {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
     color: #ffffff;
     background-color: #83B3D3;
     text-transform: uppercase;
     text-decoration: none;
+    width: 120px;
+    border-radius: 5px;
+}
+.button-reset {
+  
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    width: 120px;
+    /*сделать кнопку прозрачной*/
 }
 .catalog-filter-sort {
     display: flex;
@@ -639,7 +657,7 @@ body {
     padding: 30px 72px;
 }
 .pagination {
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
     display: flex;
     margin: 0;
     padding: 0;
