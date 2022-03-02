@@ -415,7 +415,7 @@ body {
     padding-left: 110px;
     padding-top: 10px;
     padding-right: 110px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .inner-header-title {
     margin-top: 35px;
@@ -473,7 +473,7 @@ body {
 }
 .catalog-filter-slider-button-2 {
     display: flex;
-    width: 400px;
+    width: 350px;
     
 }
 .catalog-filter-slider-button {
@@ -481,8 +481,7 @@ body {
     padding: 0px;
 }
 .catalog-filter-slider {
-    /*display: flex;
-    flex-direction: column;*/
+    
     width: 124px;
 }
 .control-input {
@@ -495,10 +494,26 @@ body {
     margin: 34px 0px;
 }
 .button-submit {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
     color: #ffffff;
     background-color: #83B3D3;
     text-transform: uppercase;
     text-decoration: none;
+    width: 120px;
+    border-radius: 5px;
+}
+.button-reset {
+  
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    width: 120px;
+    /*сделать кнопку прозрачной*/
 }
 .catalog-filter-sort {
     display: flex;
